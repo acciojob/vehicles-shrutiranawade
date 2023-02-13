@@ -2,11 +2,10 @@ package com.driver;
 
 public class Boat implements WaterVehicle{
     String name;
-    String type;
     int capacity;
-    Boat(String  name,String type,int capacity){
+    Boat(String  name,int capacity){
         this.name = name;
-        this.type = type;
+
         this.capacity = capacity;
     }
     @Override
