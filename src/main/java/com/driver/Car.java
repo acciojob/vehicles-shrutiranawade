@@ -1,7 +1,9 @@
 package com.driver;
 
 public class Car extends Vehicle {
-    private int wheels;
+
+ private String name;
+ private int wheels;
     private String type;
     private int doors;
     private int gears;
