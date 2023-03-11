@@ -9,7 +9,7 @@ public class Vehicle {
     public Vehicle(String name) {
         this.name = name;
         this.currentSpeed=0;
-this.currentDirection =0;
+        this.currentDirection =0;
 
     }
 
@@ -25,17 +25,17 @@ this.currentDirection =0;
         return currentSpeed;
     }
 
-    public void setCurrentSpeed(int currentSpeed) {
-        this.currentSpeed = currentSpeed;
-    }
-
-    public int getCurrentDirection() {
-        return currentDirection;
-    }
-
-    public void setCurrentDirection(int currentDirection) {
-        this.currentDirection = currentDirection;
-    }
+//    public void setCurrentSpeed(int currentSpeed) {
+//        this.currentSpeed = currentSpeed;
+//    }
+//
+//    public int getCurrentDirection() {
+//        return currentDirection;
+//    }
+//
+//    public void setCurrentDirection(int currentDirection) {
+//        this.currentDirection = currentDirection;
+//    }
 
     public void move(int speed, int direction){
         //set the values of currentSpeed and currentDirection
@@ -45,7 +45,7 @@ this.currentDirection =0;
     }
     public void steer(int direction){
         //direction is in degrees, add it to the current direction
-        this.currentDirection = this.currentDirection +direction;
+        this.currentDirection += direction;
         System.out.println("steer method called - The direction is changed to: " + currentDirection + " degrees");
     }
 
